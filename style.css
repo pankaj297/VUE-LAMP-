@@ -176,14 +176,14 @@ html{
 @media(max-width: 400px){
     .lamp{
         font-size: 5%;
-        height: 120px;
+        height: 130px;
         width: 75px;
         
     }
     .light{
         font-size: 5%;
-        height: 100px;
-        width: 220px; 
+        height: 130px;
+        width: 245px; 
         margin-left: -66px;
     }
 }
