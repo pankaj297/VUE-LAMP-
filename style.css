@@ -1,0 +1,190 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    background: black;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    justify-content: space-evenly;
+    text-overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 2rem 5%;
+    justify-content: space-evenly;
+    
+}
+nav .manu-img{
+   width: 2.5rem;
+   margin-right: 2rem;
+   cursor: pointer;
+}
+nav .logo{
+    width: 16rem;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 0.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.link{
+    height: 3rem;
+    width: 10rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 0.6rem;
+    box-shadow: 0.2rem 0.3rem white;
+    /* flex-wrap: wrap; */
+    font-size: 1.3rem;
+    
+}
+button{
+    background-color: #efefef;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 2rem;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.lamp-container{
+    position: absolute;
+    top: -2rem;
+    left: 22%;
+    width: 200px;
+}
+.lamp{
+    width: 100%;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70rem;
+    margin-left: -1rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.text-container{
+    max-width: 60rem;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 7rem;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0.2rem 0.3rem blue;
+}
+.text-container a{
+    text-decoration: none;
+    background: blue;
+    padding: 1.4rem  4rem;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    border-radius: 2.5rem;
+    box-shadow: 0.3rem 0.4rem skyblue;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15rem;
+}
+.control .line{
+    width: 25rem;
+    height: 0.2rem;
+    background: #fff;
+    margin: 0 2rem;
+    border-radius: 0.2rem;
+
+}
+.control .line span{
+    width: 50%;
+    height: 0.8rem;
+    margin-top: -0.2rem;
+    border-radius: 0.4rem;
+    background-color: blue;
+    display: block;
+}
+.active{
+  background-color: aqua;
+
+}
+.active span{
+    background: #fff;
+    margin-left: 3.1rem;
+}
+.on{
+    opacity: 1;
+}
+#p1{
+    font-size: 1.5rem;
+}
+html{
+    /* font-size: 10px; */
+    /* font-size: 1rem; */
+    font-size: 62.5%;
+}
+
+@media(max-width: 470px){
+    html{
+        font-size: 23%;
+    }
+}
+@media(max-width: 400px){
+    html{
+        font-size: 18%;
+    }
+}
+@media(max-width: 400px){
+    .hero{
+        font-size: 15%;
+    }
+}
+
+@media(max-width: 400px){
+    .lamp{
+        font-size: 5%;
+        height: 110px;
+        width: 75px;
+        
+    }
+    .light{
+        font-size: 5%;
+        height: 80px;
+        width: 250px; 
+        margin-left: -66px;
+    }
+}
+
